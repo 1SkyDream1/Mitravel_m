@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Mitravel»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<div class="a"></div>
+		<h1>Верстка «Mitravel»</h1>
+		<div class="rootpage__info">
+			Особенности проекта
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+		</ol>
+		<h2>Попапы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#"></a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Спасибо за заказ!</h2>
+			<p>Буду рад (а) хорошему отзыву.</p>
+			<p>Счастья, добра и удачи! Пусть разум Ваш будет рулем, а душа – парусом! Обращайтесь снова 🤝</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>Почта: <a href="mailto:pivneko.ilya@yandex.ru">pivneko.ilya@yandex.ru</a></p>
+			<p>Телефон: <a href="tel:+79082077681">+7 908-207 76 81</a></p>
+			<p>Телеграм: <a target="_blank" href="https://t.me/SkyDream101">https://t.me/SkyDream101</a></p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	body {
+		min-height: 100vh;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: url('img/sea.jpg') center center repeat-y;
+		background-size: cover;
+		position: relative;
+	}
+
+
+	body::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		width: 100%;
+		height: 100%;
+		opacity: 0.5;
+		z-index: 1;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		color: #ebe691
+	}
+
+	/* a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	} */
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		position: relative;
+		z-index: 5;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	.rootpage__wrapper {}
+
+	h1 {
+		color: #ebe691;
+		font-size: 3rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 2rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+		max-width: 600px;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #0061e8a4;
+		transition: all 0.3s ease 0s;
+	}
+
+	.rootpage__contacts:hover {
+		box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #0061e8a4;
+		transition: all 0.3s ease 0s;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__tnx:hover {
+		box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+	}
+</style>
+
+</html>
