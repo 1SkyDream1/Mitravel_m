@@ -1,3 +1,18 @@
+// Регистрация Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => console.log('Service Worker registered'))
+          .catch(err => console.log('Registration failed: ', err));
+      });
+    }
+    
+    // Проверка PWA-инсталляции
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      console.log('PWA ready for installation');
+    });
+
 (() => {
     var __webpack_modules__ = {
         732: function(module) {
