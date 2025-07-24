@@ -4,7 +4,7 @@ const ASSETS = [
   '/home.html',
   '/manifest.json',
   'css/styles.min.css',
-  'js/app.min.js',
+  'js/app.js',
   // Добавьте все важные пути вашего приложения
   ...Object.values(manifest.icons).map(icon => icon.src)
 ];
